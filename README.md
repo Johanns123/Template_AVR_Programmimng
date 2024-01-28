@@ -9,4 +9,4 @@ This repository has a makefile to build, flash and see the size of your applicat
 4. `make` will execute `build_and_size`, building the application and showing the memory consumption
 5. If you use an AVR microcontroller that is not atmega328p, please change on makefile the target `MCU`
 6. To upload your code type `make flash`. But pay attention because the upload rules are for atmega328p, with 115200bps and that is in COM3. If your device has another BAUD RATE and is in another port (in linux OS is different. i.e., devtty/USBx) just change in makefile
-7. This makefile was developed for Windows OS. To use `make size_info`` is necessary to put the correct commands of your linux distro os MAC OS
+7. This makefile was developed for Windows OS. To use `make size_info` is necessary to put the correct commands of your linux distro os MAC OS
