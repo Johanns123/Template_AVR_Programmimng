@@ -46,10 +46,10 @@ build_and_flash: build flash
 build_and_size: build size_info
 
 clean:
-	del /q $(BUILD_DIR)
+	rm -f $(BUILD_DIR)/*
 size_info:
 	@echo "MCU: $(MCU)"
-	@python3.exe mem.py $(MCU)
+	@python3 mem.py $(MCU)
 
 	
 .PHONY: all build flash build_and_flash clean size_info
