@@ -6,12 +6,12 @@
           "${workspaceFolder}/**"
         ],
         "defines": [],
-        "compilerPath": "F:\\Downloads\\avr-gcc-12.1.0-x64-windows\\avr-gcc-12.1.0-x64-windows\\bin\\avr-gcc",
+        "compilerPath": "your/gcc_reporitory/goes/here",
         "cStandard": "c11",
         "cppStandard": "c++17",
-        "intelliSenseMode": "gcc-x86",
+        "intelliSenseMode": "gcc-x86", //for linux is 
         "compilerArgs": [
-          "-mmcu=atmega328p",
+          "-mmcu=you_MCU",
           "-Os"
           // Adicione outras opções do compilador aqui, se necessário
         ],

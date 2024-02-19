@@ -12,7 +12,7 @@ BUILD_DIR = build
 SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
 
 # Flags do compilador
-CFLAGS = -std=c11 -mmcu=$(MCU) -Wall -Wextra -Os -Iinclude
+CFLAGS = -std=c11 -mmcu=$(MCU) -Wextra -Os -Iinclude
 
 # Nome do arquivo de saída (.hex)
 OUTPUT_HEX = $(BUILD_DIR)/$(PROJECT_NAME).hex
@@ -21,8 +21,8 @@ OUTPUT_HEX = $(BUILD_DIR)/$(PROJECT_NAME).hex
 MCU = atmega328p
 
 # Programador para avrdude
-PROGRAMMER = arduino
-PORT = COM3
+PROGRAMMER = usbasp
+PORT = COM4
 BAUD = 115200
 
 # Comandos
@@ -46,7 +46,7 @@ build_and_flash: build flash
 build_and_size: build size_info
 
 clean:
-	rm -f $(BUILD_DIR)/*
+	del /q $(BUILD_DIR)
 size_info:
 	@echo "MCU: $(MCU)"
 	@python3 mem.py $(MCU)
