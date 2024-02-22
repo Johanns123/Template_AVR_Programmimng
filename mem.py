@@ -42,15 +42,5 @@ Flash_percentage = round((float(Flash_memory/Total_Flash_memory)*100), 2)
 Data_Memory_percentage = round((float(data_memory)/Total_RAM_memory)*100, 2)
 
 # Show the infos
-print(f"Flash: {Flash_memory}/{Total_Flash_memory} bytes => {Flash_percentage}%/100%")
-print(f"RAM: {data_memory}/{Total_RAM_memory} bytes => {Data_Memory_percentage}%/100%")
-
-
-
-# print(df["MCU Name"])
-
-# MCU = "ATmega328P"
-
-
-# print(Total_Flash_memory)
-# print(Total_RAM_memory)
+print(f"Flash: {Flash_memory}/{Total_Flash_memory} bytes => {Flash_percentage}%")
+print(f"RAM: {data_memory}/{Total_RAM_memory} bytes => {Data_Memory_percentage}%")
